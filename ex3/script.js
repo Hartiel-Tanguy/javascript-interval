@@ -11,7 +11,7 @@ for(i=0; i < 12 ;i++){
 
 
 let previouscircle = 0
-
+let score = 0
 
 
 function newmole(){
@@ -25,6 +25,8 @@ function newmole(){
    function hiden() {
        let circle = document.getElementsByTagName('div')
        circle[rancircle].style.backgroundColor = "white"
+        score ++
+        document.body.querySelector('span').innerHTML = score
    } 
    circle[rancircle].addEventListener('click',hiden)
 
