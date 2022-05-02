@@ -1,12 +1,17 @@
 let tableau = []
+
 let section = document.querySelector('section')
 for(i=0; i < 12 ;i++){
     let div = document.createElement('div')
     tableau.push(div)
     section.appendChild(div)
-
 }
+
+
+
+
 let previouscircle = 0
+
 
 
 function newmole(){
@@ -22,5 +27,7 @@ function newmole(){
        circle[rancircle].style.backgroundColor = "white"
    } 
    circle[rancircle].addEventListener('click',hiden)
+
+  
 }
-setInterval(newmole, 1000)
+setInterval(newmole, 1000);
